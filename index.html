@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminCMG</title>
+    <meta name="description" content="Ejemplo de un documento HTML básico con todas sus estructuras esenciales">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3  ">
+            <div class="container ">
+              <a class="navbar-brand" href="#home">
+                <img src="./assets/Logo/logo-400x400.png" class="logo" alt="Logo">
+              </a>
+             
+              <h1 class="titleName">Colegio Maria Guadalupe</h1>
+
+              <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse divNavBar" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 txtHeader">
+                  <li class="nav-item txtTransicionNavBar px-2">
+                    <a class="nav-link" href="#projects">Administrador</a>
+                  </li>
+                  <li class="nav-item txtTransicionNavBar px-2">
+                    <a class="nav-link" href="#projects">Boletines</a>
+                  </li>
+                  <li class="nav-item  px-2">
+                    <a class="nav-link" href="#contact">
+                        <img src="./assets/Login/user.png" class="" alt="User">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+    
+            </div>
+          </nav>
+       
+    </header>
+
+    <main>
+        
+        <div class="sidebar-container">
+            <div class="sidebar" id="sidebar">
+                <div class="sidebarUser">
+                    <div class="sidebarUserAvatar">
+                        <img src="./assets/Login/user.V1.png" class="" alt="User">
+                    </div>
+                    <div class="sidebarUserName">
+                        <h3>Usuario</h3>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#home">Usuarios</a></li>
+                        <li><a href="#services">Profesores</a></li>
+                        <li><a href="#about">Alumnos</a></li>
+                        <li><a href="#contact">Materias</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button id="toggleSidebar" class="toggle-btn">&gt;</button>
+        </div>
+
+        <div class="content" id="content">
+            <h2 class="titleNameContent">Administrador</h2>
+            <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css /> -->
+                <div class="tableContainer">
+                    <div class="row">
+                        <div class="col-md-offset-1 ">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col col-sm-3 col-xs-12">
+                                            <h4 class="title">Usuarios <span></span></h4>
+                                        </div>
+                                        <div class="col-sm-9 col-xs-12 text-right ">
+                                            <div class="btn_group  d-flex aling-items-center">
+                                                
+                                                    <input type="text" class="form-control" placeholder="Buscar">
+                                                
+                                                <div class="px-1">
+                                                    <button class="btn btn-default " title="Reload"><i class="fa fa-sync-alt"></i></button>
+                                                </div>
+                                                <div class="px-1">
+                                                    <button class="btn btn-default" title="Pdf"><i class="fa fa-file-pdf"></i></button>
+                                                </div>
+                                                <div class="px-1">
+                                                    <button class="btn btn-default" title="Excel"><i class="fas fa-file-excel"></i></button>
+                                                </div>                                         
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Alumno</th>
+                                                <th>Dni</th>
+                                                <th>Fecha de nacimiento</th>
+                                                <th>Ciudad</th>
+                                                <th>Observacion</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Vincent Williamson</td>
+                                                <td>41099153</td>
+                                                <td>iOS Developer</td>
+                                                <td>Sinaai-Waas</td>
+                                                <td>
+                                                    <ul class="action-list">
+                                                        <li><a href="#" data-tip="Editar"><i class="fa fa-edit"></i></a></li>
+                                                        <li><a href="#" data-tip="Borrar"><i class="fa fa-trash"></i></a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>                                      
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="row ">
+                                        <div class="col col-sm-6 col-xs-6 d-flex justify-content-end">
+                                           <p>  showing <b> 5 </b> out of <b> 25 </b> entries </p>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-6 d-flex justify-content-start">
+                                            <ul class="pagination hidden-xs pull-right">
+                                                <li><a href="#"><</a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">></a></li>
+                                            </ul>
+                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/1c8c69f422.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+function printBoletin() {
+    window.print();
+}

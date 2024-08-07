@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">5
+    <style>
+        .planillaNotas th {
+            width: 120px; /* Ancho estándar para los otros th */
+        }
+
+        .planillaNotas th.areas {
+            width: 200px; /* Ajusta este valor según sea necesario para "ÁREAS" */
+        }
+    </style>
+    <title>Tabla de Notas</title>
+</head>
+<body>
+    <div class="containerPlanilla" id="planillaBoletin">
+        <div class="planillaMaterias">
+            <div class="planillaDesempenoAcademico">
+                <div class="w-50">
+                    <h3>Desempeño académico</h3>
+                    <h3>2ª Ciclo primario</h3>
+                    <div class="containerCheckCiclo">
+                        <div class="d-flex">
+                            <div class="checkCiclo"></div>
+                            4ª Año
+                        </div>
+                        <div class="d-flex ">
+                            <div class="checkCiclo"></div>
+                            5ª Año
+                        </div>
+                        <div class="d-flex">
+                            <div class="checkCiclo"></div>
+                            6ª Año
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="ContainerEscalaCalificacion">
+                    <h3>Escala de calificación</h3>
+                    <p><strong> Aprobado:</strong> 7,8,9,10</p>
+                    <p><strong>Desaprobado:</strong> 4,5,6</p>
+
+
+                </div>
+            </div>
+             <div class="planillaCalificaciones">
+                <table class="planillaNotas">
+                <thead>
+                    <tr class="titlePlanillaNotas" >
+                        <th rowspan="2" class="thAreas" >ÁREAS</th>
+                        <th rowspan="2" class="thNotas">1° INFORMACIÓN MAR-MAY</th>
+                        <th rowspan="2" class="thNotas">2° INFORMACIÓN JUN-AGO</th>
+                        <th rowspan="2" class="thNotas">3° INFORMACIÓN SEP-NOV</th>
+                        <th rowspan="2" class="thNotas">PERÍODO EXTENDIDO</th>
+                        <th rowspan="2" class="thNotas">INFORME FINAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="tdAreas">PRÁCTICAS DEL LENGUAJE</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas" >Producción escrita</td>
+                        <td>8</td>  
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Comprensión lectora</td>
+                        <td>8</td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Expresión oral</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="tdAreas">MATEMÁTICA</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Numeración</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Operaciones</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Proporcionalidad</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Espacio y geometría</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas"> Medida</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                    </tr>
+                    <tr>
+                        <td class="tdAreas">CS. NATURALES</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Conceptos clave</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>    
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Competencias científicas</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdAreas">CS. SOCIALES</td>
+                        <td>8</td>
+                        <td>8</td>      
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Conceptos clave</td>
+                        <td>8</td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdSubAreas">Competencias científicas</td>
+                        <td>8</td>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdAreas">ED. ARTÍSTICA / MÚSICA</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdAreas">ED. FÍSICA</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdAreas">INFORMÁTICA</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdAreas">INGLÉS</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    
+                    </tbody>
+                </table>  
+                
+                <table class="planillaFirmas">
+                    <tr>
+                        <td class="tdTitle">DÍAS HÁBILES</td>
+                        <td >61</td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">INASISTENCIAS</td>
+                        <td>3</td>
+                        <td></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">FIRMA DEL DOCENTE</td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">FIRMA DEL DIRECTOR</td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">FIRMA DEL ALUMNO</td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">FIRMA DEL PADRE/TUTOR</td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                    </tr>
+                    <tr>
+                        <td class="tdTitle">PERÍODO COMPLEMENTARIO</td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="planillaPeriodoComplementario">
+                <table class="tablePeriodoComplementario">
+                    <thead>
+                        <tr class="" >
+                            <th  class="" >PERÍODO
+                                COMPLEMENTARIO</th>
+                            <th  class="">Práct.Leng.</th>
+                            <th  class="">Matemática</th>
+                            <th  class="">Cs.Naturales</th>
+                            <th  class="">Cs.Sociales</th>
+                            <th  class="">Ed.Artística</th>
+                            <th  class="">Ed.Artística.</th>
+                            <th  class="">Ed.Física</th>
+                            <th  class="">Inglés</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>  
+            </div>
+        </div>
+       
+        <div class="planillaInformes">
+
+            <div class="planillaObservaciones">
+                <div class="w-50">
+                    <h3>OBSERVACIONES</h3>
+                </div>
+                <div class="w-50 d-flex ">
+                    <p>Año: 5° B</p>
+                    <p>2024</p>
+                </div>
+            </div>
+            <div class="planillaInformesTable">
+               <div class="boxInformes">
+                 <div class="boxInformesTitle">
+                    <h3>1° INFORME</h3> 
+                 </div>
+                 <div class="boxInformesDescription">
+                    <p></p>
+                 </div>
+               </div>
+            </div>
+            <div class="planillaInformesTable my-3">
+                <div class="boxInformes">
+                  <div class="boxInformesTitle">
+                     <h3>2° INFORME</h3> 
+                  </div>
+                  <div class="boxInformesDescription">
+                     <p></p>
+                  </div>
+                </div>
+             </div>
+             <div class="planillaInformesTable my-3">
+                <div class="boxInformes">
+                  <div class="boxInformesTitle">
+                     <h3>3° INFORME</h3> 
+                  </div>
+                  <div class="boxInformesDescription">
+                     <p></p>
+                  </div>
+                </div>
+             </div>
+             <div class="planillaInformesTable my-3">
+                <div class="boxInformes">
+                  <div class="boxInformesTitle">
+                     <h3>PERIODO EXTENDIDO</h3> 
+                  </div>
+                  <div class="boxInformesDescription">
+                     <p></p>
+                  </div>
+                </div>
+             </div>
+             <div class="planillaInformesTable my-3">
+                <div class="boxInformes">
+                  <div class="boxInformesTitle">
+                     <h3>INFORME FINAL</h3> 
+                  </div>
+                  <div class="boxInformesDescription">
+                     <p></p>
+                  </div>
+                </div>
+             </div>
+
+             <div class="planillaPromueve">
+                <h4 >RECURSA</h4>
+                <div class="boxRecursaPromueve">
+                    <p></p>
+                </div>
+                <h4>PROMUEVE A :</h4>
+                <div class="boxRecursaPromueve">
+                    <p></p>
+                </div>
+             </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

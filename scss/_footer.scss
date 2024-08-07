@@ -1,0 +1,28 @@
+
+footer {
+    margin-left: 220px;
+    //padding: 10px 0px; /* Ajusta este valor según la altura del header */
+    transition: margin-left 0.3s ease;
+  
+}
+footer.expandedFooter {
+    margin-left: 10px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Altura del footer */
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 50px; /* Alinea el texto verticalmente */
+}
+.footerLogins{
+    margin-left: 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Altura del footer */
+}
