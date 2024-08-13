@@ -605,13 +605,23 @@ footer.expandedFooter {
   gap: 20px;
   padding: 10px;
   border: 2px solid black;
+  width: 297mm; /* Ancho de A4 en horizontal */
+  height: 210mm; /* Alto de A4 */
 }
 
 .planillaDesempenoAcademico {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2px 2px 10px 10px;
+  padding: 2px 2px 2px 10px;
+}
+
+.planillaDesempenoAcademico h3 {
+  font-size: 14px;
+}
+
+.planillaDesempenoAcademico p {
+  font-size: 10px;
 }
 
 .containerCheckCiclo {
@@ -621,18 +631,31 @@ footer.expandedFooter {
   justify-content: space-around;
 }
 
+.containerCheckCiclo p {
+  font-size: 12px;
+  margin: 2px 0px;
+}
+
 .checkCiclo {
   border: #292525 1px solid;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin-right: 10px;
+  margin: 2px 5px;
 }
 
 .ContainerEscalaCalificacion {
+  display: flex;
+  flex-direction: column; /* Asegúrate de que el contenido se apile verticalmente */
+  align-items: flex-start;
   width: 50%;
+  height: 100%;
+}
+.ContainerEscalaCalificacion h3 {
+  margin-bottom: 0;
 }
 .ContainerEscalaCalificacion p {
-  margin: 0;
+  margin: 0px 0px;
 }
 
 .planillaMaterias {
@@ -652,7 +675,7 @@ footer.expandedFooter {
   border: 1px solid black;
   text-align: center;
   padding: 8px;
-  font-size: small;
+  font-size: 11px;
 }
 
 .planillaNotas th {
@@ -660,7 +683,11 @@ footer.expandedFooter {
 }
 
 .planillaNotas th.thAreas {
-  width: 200px; /* Ajusta este valor según sea necesario para "ÁREAS" */
+  width: 180px; /* Ajusta este valor según sea necesario para "ÁREAS" */
+}
+
+.planillaNotas th.thNotas {
+  font-size: 10px;
 }
 
 .titlePlanillaNotas th {
@@ -670,6 +697,7 @@ footer.expandedFooter {
 .planillaNotas td.tdAreas {
   font-weight: bold;
   text-align: left;
+  padding-left: 5px;
 }
 
 .planillaNotas td.tdSubAreas {
@@ -684,7 +712,8 @@ footer.expandedFooter {
 }
 
 .planillaFirmas {
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 10px;
   border-collapse: collapse;
 }
 
@@ -692,7 +721,6 @@ footer.expandedFooter {
   border: 1px solid black;
   text-align: center;
   padding: 8px;
-  width: 120px;
 }
 
 .planillaFirmas th {
@@ -702,8 +730,13 @@ footer.expandedFooter {
 .planillaFirmas td.tdTitle {
   font-weight: bold;
   text-align: left;
-  font-size: small;
-  width: 200px;
+  padding-left: 5px;
+  font-size: 11px;
+  width: 180px !important;
+}
+
+.planillaFirmas td.tdSubAreas {
+  padding-left: 5px;
 }
 
 .planillaObservaciones {
@@ -715,9 +748,14 @@ footer.expandedFooter {
   padding: 5px 5px;
 }
 
+.planillaObservaciones h3, p {
+  font-size: 14px;
+  margin-bottom: unset;
+}
+
 .planillaInformesTable {
   justify-content: center;
-  margin: 55px 2px 0px 2px;
+  margin: 22px 2px 0px 2px;
 }
 
 .boxInformes {
@@ -726,19 +764,30 @@ footer.expandedFooter {
   width: 100%;
 }
 
+.boxInformes h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: unset;
+}
+
 .planillaInformesTable .boxInformesTitle {
   padding: 5px;
   border-bottom: 1px solid black;
 }
 
 .planillaInformesTable .boxInformesDescription {
-  height: 130px;
+  height: 70px;
 }
 
 .planillaPromueve {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.planillaPromueve h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .planillaPromueve .boxRecursaPromueve {
@@ -757,7 +806,7 @@ footer.expandedFooter {
   border: 1px solid black;
   text-align: center;
   padding: 5px;
-  font-size: small;
+  font-size: 10px;
 }
 
 .tablePeriodoComplementario th {
@@ -794,7 +843,7 @@ footer.expandedFooter {
 .planillaFirmas th, .planillaFirmas td,
 .tablePeriodoComplementario th, .tablePeriodoComplementario td {
   border: 1px solid #000;
-  padding: 5px;
+  padding: 1px;
   word-wrap: break-word;
 }
 
@@ -823,7 +872,6 @@ footer.expandedFooter {
     transform-origin: top left;
     padding: 10mm; /* Espacio para evitar recortes */
     box-sizing: border-box;
-    zoom: 0.6;
   }
 }
 
